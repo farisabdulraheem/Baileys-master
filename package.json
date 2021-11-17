@@ -16,6 +16,7 @@
     "automation"
   ],
   "scripts": {
+    "postinstall": "npm run example",
     "test": "mocha --timeout 240000 -r ts-node/register src/Tests/Tests.*.ts",
     "prepare": "tsc",
     "lint": "eslint '*/*.ts' --quiet --fix",
